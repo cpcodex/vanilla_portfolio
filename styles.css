@@ -42,8 +42,25 @@ div.box {
 
 /* box-body */
 .box-header {
+    display: flex;
     margin: 15px;
+    justify-content: center;
 }
+
+.box-header-body {
+    background-color: #5c469c;
+    border-radius: 5px;
+    border: 10px solid red;
+    height: 100px;
+    margin: 10px;
+}
+
+.box-header-body p {
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+
 
 
 /* end box-body */
