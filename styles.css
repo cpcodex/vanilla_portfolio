@@ -16,13 +16,14 @@ div.box {
 
 /* navbar */
 .main-header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center; 
   padding: 1rem 2rem; 
-
-  color: #e0e0e0;
+  color: #ab88fd;
 }
+
 .navbar-box-icon {
     display: flex;
     align-items: center;
@@ -41,7 +42,7 @@ div.box {
     font-size: 3rem;
     font-family: "Roboto Mono", monospace;
     font-weight: 200;
-    font-style: oblique; 
+    font-style: oblique;
 }
 
 .navbar ul {
@@ -61,6 +62,27 @@ div.box {
 
 .navbar a:hover {
   color: #5c469c;
+  font-size: 1.5rem;
+}
+
+.hamburger-menu {
+  display: flex;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  z-index: 10;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger-menu .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
 }
 /* end navbar */
 
@@ -95,14 +117,23 @@ div.box {
 }
 /* end footer */
 
-/* responsizness */
+/* responsivness */
+/* MAX */
 @media (max-width: 768px) {
   .navbar {
     display: none;
   }
 
-  .main-header {
-    justify-content: center;
+  .navbar-box-icon, .navbar {
+    justify-content:left
   }
+}
+
+/* MIN */
+@media (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+  
 }
 /* end responsizness */
