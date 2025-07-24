@@ -120,12 +120,36 @@ div.box {
 /* responsivness */
 /* MAX */
 @media (max-width: 768px) {
+  /* Style the navigation as a dropdown menu */
   .navbar {
-    display: none;
+    position: absolute;       /* Position it relative to the header */
+    top: 100%;                /* Place it directly below the header */
+    left: 0;
+    right: 0;
+    background-color: #090e3a; /* Match your body background */
+    padding: 1rem 0;
+    border: 2px solid #5c469c;
+    box-shadow: -5px -5px 10px #5c469c, 5px 5px 10px #5c469c;
+
+    /* Hidden by default */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-40px); /* Start slightly above for animation */
+    transition: opacity 0.3s ease, transform 0.3s ease;
   }
 
-  .navbar-box-icon, .navbar {
-    justify-content:left
+  /* Make the list items stack vertically */
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* This is the key: Show the dropdown when the menu is open */
+  .main-header.is-menu-open .navbar {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 }
 
@@ -134,6 +158,4 @@ div.box {
   .hamburger-menu {
     display: none;
   }
-  
 }
-/* end responsizness */
