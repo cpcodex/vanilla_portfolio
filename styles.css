@@ -9,48 +9,72 @@ hr {
 }
 
 div.box {
-    background-color: #5c469c;
+    background-color: #664cb6;
     border-radius: 5px;
     margin: 3%;
 }
 
 /* navbar */
-.navbar-box {
+.main-header {
+  display: flex; /* Activates Flexbox */
+  justify-content: space-between; /* Pushes the logo and nav to opposite ends */
+  align-items: center; /* Vertically centers everything in the header */
+  padding: 1rem 2rem; /* Adds some spacing (top/bottom | left/right) */
+
+  color: #e0e0e0;
+}
+.navbar-box-icon {
     display: flex;
-    justify-content: space-evenly;
-    border: 2px rgb(96 139 168);
+    align-items: center;
+    gap: 1rem;
 }
 
 .icon {
     border-radius: 8px;
-    width: 175px;
-    opacity: 70%;
+    height: 80px;
+    width: 80px;
     box-shadow: 10px 10px 80px #b9a4f1;
-    align-self: flex-end;
     margin: 3%;
 }
 
 .cpcodex {
-    font-size: 54px;
+    font-size: 3rem;
     font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
     font-weight: 200;
-    font-style:oblique; 
+    font-style: oblique; 
+}
 
+.navbar ul {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    gap: 1.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #b9a4f1;
+  font-size: 1rem;
+}
+
+.navbar a:hover {
+  color: #5c469c;
 }
 /* end navbar */
 
 /* box-body */
 .box-header {
     display: flex;
-    margin: 15px;
     justify-content: center;
+    color: #d38dee;
+    font-family: "Roboto Mono", monospace;
 }
 
 .box-header-body {
     background-color: #5c469c;
     border-radius: 5px;
-    border: 10px solid red;
     height: 100px;
     margin: 10px;
 }
@@ -58,11 +82,9 @@ div.box {
 .box-header-body p {
     margin: 5px;
     flex-wrap: wrap;
+    color: #b9a4f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
-
-
 /* end box-body */
 
 /* footer */
@@ -72,3 +94,13 @@ div.box {
     margin-top: auto; 
 }
 /* end footer */
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .main-header {
+    justify-content: center;
+  }
+}
