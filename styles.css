@@ -12,6 +12,7 @@ div.box {
     background-color: #664cb6;
     border-radius: 5px;
     margin: 3%;
+    border: 3px solid #1d267D;
 }
 
 /* navbar */
@@ -43,6 +44,7 @@ div.box {
     font-family: "Roboto Mono", monospace;
     font-weight: 200;
     font-style: oblique;
+    text-shadow: 2px 2px 2px #090e3a;
 }
 
 .navbar ul {
@@ -92,6 +94,7 @@ div.box {
     justify-content: center;
     color: #dd89ff;
     font-family: "Roboto Mono", monospace;
+    text-shadow: 1px 1px 1px #090e3a;
 }
 
 .box-header-body {
@@ -105,6 +108,7 @@ div.box {
     flex-wrap: wrap;
     color: #b9a4f1;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 1px #090e3a;
 }
 /* end box-body */
 
@@ -120,37 +124,39 @@ div.box {
 /* responsivness */
 /* MAX */
 @media (max-width: 768px) {
-  /* Style the navigation as a dropdown menu */
   .navbar {
-    position: absolute;       /* Position it relative to the header */
-    top: 100%;                /* Place it directly below the header */
+    position: absolute;       
+    top: 100%;                
     left: 0;
     right: 0;
-    background-color: #090e3a; /* Match your body background */
+    background-color: #090e3a;
     padding: 1rem 0;
     border: 2px solid #5c469c;
     box-shadow: -5px -5px 10px #5c469c, 5px 5px 10px #5c469c;
-
-    /* Hidden by default */
+    text-shadow: 2px 2px 2px #5c469c;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-40px); /* Start slightly above for animation */
+    transform: translateY(-40px);
     transition: opacity 0.3s ease, transform 0.3s ease;
   }
 
-  /* Make the list items stack vertically */
   .navbar ul {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
 
-  /* This is the key: Show the dropdown when the menu is open */
   .main-header.is-menu-open .navbar {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
   }
+
+  .navbar a:hover {
+  color: #ab88fd;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
 }
 
 /* MIN */
