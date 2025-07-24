@@ -33,9 +33,9 @@ div.box {
 
 .icon {
     border-radius: 8px;
-    height: 80px;
-    width: 80px;
-    box-shadow: 10px 10px 80px #b9a4f1;
+    height: 100px;
+    width: 100px;
+    box-shadow: .5px .5px 20px #b9a4f1, -.5px -.5px 20px #b9a4f1;
     margin: 3%;
 }
 
@@ -44,7 +44,7 @@ div.box {
     font-family: "Roboto Mono", monospace;
     font-weight: 200;
     font-style: oblique;
-    text-shadow: 2px 2px 2px #090e3a;
+    text-shadow: 1px 1px #734eda
 }
 
 .navbar ul {
@@ -101,12 +101,13 @@ div.box {
     border-radius: 5px;
     height: 100px;
     margin: 10px;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
 }
 
 .box-header-body p {
     margin: 5px;
-    flex-wrap: wrap;
-    color: #b9a4f1;
+    color: #ddd1ff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 1px 1px 1px #090e3a;
 }
@@ -137,8 +138,9 @@ div.box {
     background-color: #090e3a;
     padding: 1rem 0;
     border: 2px solid #5c469c;
-    box-shadow: -5px -5px 10px #5c469c, 5px 5px 10px #5c469c;
-    text-shadow: 2px 2px 2px #5c469c;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 20px #00e1ff, -2px -2px 20px #00e1ff;
+    text-shadow: 2px 2px 2px #4d3594;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-40px);
@@ -158,7 +160,7 @@ div.box {
   }
 
   .navbar a:hover {
-  color: #ab88fd;
+  color: #00a2ff;
   font-size: 1.5rem;
   text-decoration: underline;
 }
