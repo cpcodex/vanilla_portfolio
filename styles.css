@@ -6,7 +6,7 @@
     --accent-color: #9F7AEA;      
     --accent-hover: #B8A2F6;    
     --baby-pink: #c987e7;
-    --neon-slate: rgba(57, 199, 209, 0.4);
+    --neon-slate: rgba(57, 199, 209, 0.404);
     --neon-purp: rgba(159, 122, 234, 0.4);
 }
 
@@ -45,9 +45,9 @@ body {
 }
 
 .cpcodex {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: "Roboto Mono", monospace;
-    font-weight: 200;
+    font-weight: 300;
     font-style: oblique;
     margin-left: 15px;
     justify-content: center;
@@ -72,7 +72,7 @@ body {
 
 .navbar a:hover {
     color: var(--accent-hover);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /* --- Hamburger Menu --- */
@@ -91,7 +91,7 @@ body {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: var(--text-color);
+    background-color: var(--accent-color);
     border-radius: 3px;
 }
 
