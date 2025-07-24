@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact me to discuss projects, collaborations, or any questions you may have.">
+    <title>cpcodex - Contact Me</title>
+    <link rel="icon" type="image/x-icon" href="assets/cpcodex org.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- The header is identical for a consistent look -->
+    <header class="main-header">
+        <!-- This now links back to the homepage -->
+        <a href="index.html" class="navbar-box-icon" style="text-decoration: none; color: inherit;">
+            <img src="assets/cpcodex org.png" alt="cpcodex icon" class="icon">
+            <span class="cpcodex">cpcodex</span>
+        </a>
+
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <!-- Updated links to point back to the homepage sections -->
+                <li class="navbar-list-item"><a href="index.html#about">About</a></li>
+                <li class="navbar-list-item"><a href="index.html#projects">Projects</a></li>
+                <li class="navbar-list-item"><a href="#">Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <button class="hamburger-menu" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <main class="canvas">
+        <!-- Main content for the contact page -->
+        <section class="box" id="contact">
+            <div class="box-header">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="box-header-body">
+                <p>Have a project in mind, a question, or just want to connect? Send me a message below!</p>
+
+                <!-- Simple contact form -->
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- The footer is also identical -->
+    <footer class="footer">
+        <div class="footer-box">
+            <p class="footer-text">Inception 2025. cpcodex. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
