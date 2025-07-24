@@ -121,6 +121,11 @@ div.box {
 }
 /* end footer */
 
+::selection {
+  background-color: #5c469c;
+  color: #e0e0e0;
+}
+
 /* responsivness */
 /* MAX */
 @media (max-width: 768px) {
