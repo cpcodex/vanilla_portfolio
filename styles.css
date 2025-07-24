@@ -4,15 +4,16 @@ body {
 }
 
 hr {
-    border: 2px solid #1d267D;
-    border-radius: 5px;
+    border: 3px solid #1d267D;
+    border-radius: 2px;
 }
 
 div.box {
-    background-color: #664cb6;
+    background-color: #4d3594;
     border-radius: 5px;
     margin: 3%;
-    border: 3px solid #1d267D;
+    /* border: 3px solid #1d267D; */
+    box-shadow: 2px 2px 7px #ab88fd;
 }
 
 /* navbar */
@@ -53,7 +54,7 @@ div.box {
     margin: 0;
     padding: 0;
     display: flex; 
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .navbar a {
@@ -63,8 +64,8 @@ div.box {
 }
 
 .navbar a:hover {
-  color: #5c469c;
-  font-size: 1.5rem;
+  color: #00a2ff;
+  text-decoration: underline;
 }
 
 .hamburger-menu {
@@ -132,7 +133,7 @@ div.box {
 @media (max-width: 768px) {
   .navbar {
     position: absolute;       
-    top: 100%;                
+    top: 100%;
     left: 0;
     right: 0;
     background-color: #090e3a;
