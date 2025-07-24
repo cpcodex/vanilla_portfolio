@@ -16,10 +16,10 @@ div.box {
 
 /* navbar */
 .main-header {
-  display: flex; /* Activates Flexbox */
-  justify-content: space-between; /* Pushes the logo and nav to opposite ends */
-  align-items: center; /* Vertically centers everything in the header */
-  padding: 1rem 2rem; /* Adds some spacing (top/bottom | left/right) */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 1rem 2rem; 
 
   color: #e0e0e0;
 }
@@ -68,12 +68,11 @@ div.box {
 .box-header {
     display: flex;
     justify-content: center;
-    color: #d38dee;
+    color: #dd89ff;
     font-family: "Roboto Mono", monospace;
 }
 
 .box-header-body {
-    background-color: #5c469c;
     border-radius: 5px;
     height: 100px;
     margin: 10px;
@@ -91,10 +90,12 @@ div.box {
 .footer {
     display: flex;
     justify-content: center;
-    margin-top: auto; 
+    margin-top: auto;
+    font-family: 'Courier New', Courier, monospace;
 }
 /* end footer */
 
+/* responsizness */
 @media (max-width: 768px) {
   .navbar {
     display: none;
@@ -104,3 +105,4 @@ div.box {
     justify-content: center;
   }
 }
+/* end responsizness */
