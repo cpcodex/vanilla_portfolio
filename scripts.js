@@ -3,7 +3,7 @@ window.onload = function () {
   // hamburger menu logic
   const hamburgerButton = document.querySelector('.hamburger-menu');
   const header = document.querySelector('.main-header');
-  if (hamburgerButton) { // Check if the button exists
+  if (hamburgerButton) {
       hamburgerButton.addEventListener('click', () => {
           header.classList.toggle('is-menu-open');
       });
@@ -30,11 +30,9 @@ window.onload = function () {
             
           emailjs.sendForm('service_odfd4eo', 'template_main_con', this)
               .then(() => {
-                  console.log('SUCCESS!');
                   alert('Your message has been sent successfully!');
                   contactForm.reset();
               }, (error) => {
-                  console.log('FAILED...', error);
                   alert('Failed to send the message. Please try again.');
               });
       });
