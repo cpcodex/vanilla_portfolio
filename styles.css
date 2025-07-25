@@ -21,6 +21,7 @@ body {
     color: var(--text-color);
 }
 
+
 /* header */
 .main-header {
     position: relative;
@@ -75,6 +76,7 @@ body {
     text-decoration: underline;
 }
 
+
 /* hamburger menu */
 .hamburger-menu {
     background: none;
@@ -94,6 +96,7 @@ body {
     background-color: var(--accent-color);
     border-radius: 3px;
 }
+
 
 /* main content */
 section.box {
@@ -151,6 +154,7 @@ hr.seperator {
     margin-bottom: 1rem;
 }
 
+
 /* tech stack */
 .tech-categories-container {
     display: grid;
@@ -197,6 +201,7 @@ hr.seperator {
     border-bottom-color: #f0db4f;
     color: #f0db4f;
 }
+
 
 /* projects */
 .projects-grid {
@@ -274,13 +279,38 @@ hr.seperator {
     font-weight: 500;
 }
 
+
+/* social links */
+.social-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.social-link img {
+    height: 35px;
+    width: 35px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
 /* footer*/
 .footer {
     text-align: center;
-    padding: 2rem;
+    padding: .5rem;
     font-family: 'Courier New', Courier, monospace;
     color: #A0AEC0;
 }
+
 
 /* contact form styling */
 .contact-form {
@@ -336,6 +366,7 @@ hr.seperator {
 .submit-btn:hover {
     background-color: var(--accent-hover);
 }
+
 
 /* responsiveness */
 @media (max-width: 768px) {
