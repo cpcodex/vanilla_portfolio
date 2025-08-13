@@ -408,17 +408,6 @@ hr.seperator {
         margin-bottom: 1rem;
         margin-top: 1rem;
     }
-
-    .projects-container {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        gap: 2rem;
-    }
-
-    .project-card {
-        width: 90%;
-    }
 }
 
 @media (min-width: 768px) {
