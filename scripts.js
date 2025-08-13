@@ -10,7 +10,7 @@ window.onload = function () {
   }
     
   window.addEventListener('resize', () => {
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > 800) {
           if (header) {
               header.classList.remove('is-menu-open');
           }
