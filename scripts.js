@@ -3,6 +3,7 @@ window.onload = function () {
     // hamburger menu logic
     const hamburgerButton = document.querySelector('.hamburger-menu');
     const header = document.querySelector('.main-header');
+    
     if (hamburgerButton) {
         hamburgerButton.addEventListener('click', () => {
             header.classList.toggle('is-menu-open');

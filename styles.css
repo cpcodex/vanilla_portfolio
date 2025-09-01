@@ -31,12 +31,6 @@ body {
   color: var(--text-color);
 }
 
-.navbar-box-icon {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
 .icon {
   border-radius: 8px;
   height: 80px;
@@ -49,13 +43,12 @@ body {
   font-family: "Roboto Mono", monospace;
   font-weight: 300;
   font-style: oblique;
-  margin-left: 15px;
-  justify-content: center;
+  margin: 0 15px 0 15px;
   color: var(--sky-blue);
   text-shadow: 2px 1px 5px var(--baby-pink), -2px -1px 5px var(--neon-slate);
 }
 
-.navbar ul {
+.navbar-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -400,6 +393,13 @@ hr.seperator {
   .profile-picture {
     margin-bottom: 1rem;
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .icon {
+    width: 100%;
+    height: auto;
   }
 }
 
